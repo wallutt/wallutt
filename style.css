@@ -1,0 +1,79 @@
+/*
+Theme Name: WalluttWpTheme
+Theme URI: www.wallutt.com
+Description: Wallutts Theme
+Version: 0.4
+Author: Carlos Wallutt
+ */
+html{height:100%;}
+body{margin:0;padding:0;font-family:'Ubuntu', sans-serif, Geneva, sans-serif,Tahoma;text-shadow:0 1px 1px rgba(255, 255, 255, 0.33);height:100%;}
+a{color:black;}
+#showli:hover{opacity:1;}
+#emailkopf:hover{width:300px;height:170px;z-index:300;background:none repeat scroll 0 0 rgba(255, 255, 255, 1);box-shadow:8px 8px 8px #666;}
+.header-menu-class li{list-style:none;float:left;padding-right:0.6em;padding-top:0.4em;}
+
+.header-menu-class{padding:8px 15px 20px;position:fixed;top:0;border-top-right-radius:0px;border-bottom-right-radius:39px;border-bottom-left-radius:0px;border-top-left-radius:0px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:39px;-moz-border-radius-bottomleft:0px;-moz-border-radius-topleft:0px;-webkit-border-top-right-radius:0px;-webkit-border-bottom-right-radius:39px;-webkit-border-bottom-left-radius:0px;-webkit-border-top-left-radius:0px;z-index:20;-webkit-animation: pulse 8s infinite;-moz-animation: pulse 12s infinite;-o-animation: pulse 12s infinite;animation: pulse 12s infinite;}
+@-webkit-keyframes pulse {0% {background-color:rgba(255,255,255,0);}50% {background-color:rgba(255,255,255,.8);}100% {background-color:rgba(255,255,255,0);}}@-moz-keyframes pulse {0% {background-color:rgba(255,255,255,0);}50% {background-color:rgba(255,255,255,.8);}100% {background-color:rgba(255,255,255,0);}}
+@keyframes pulse {0% {background-color:rgba(255,255,255,0);}50% {background-color:rgba(255,255,255,.8);}100% {background-color:rgba(255,255,255,0);}}
+.header-menu-class:hover{background-color:rgba(252,252,252,1);}
+.header-menu-class ul{font-size:0.9em;margin:0;padding:0 0 0 11px;}
+.header-menu-class a{text-decoration:none;padding:5px;}
+.header-menu-class a:hover{background-color:rgba(229, 229, 229, .4);border-radius:5px 5px 5px 5px;padding:5px;}
+.wh a:hover{color:#aeaeae;}
+.box{position:relative;width:100%;background:white;padding:5% 0 20%;z-index:13;}
+.bgw{position:relative;width:100%;background:white;padding:5% 0px 20%;z-index:13;}
+.bag{position:relative;background-position:center center;background-size:cover;z-index:11;}
+#vid{position:relative;height:500px;}
+#video video{height:auto;left:0;width:100%;position:fixed;top:0;z-index:10;}
+.in{margin:120px 0;}
+.bag h1{text-shadow:1px 1px 1px #000000;filter:dropshadow(color=#000000, offx=1, offy=1);}
+.bag:bevor{height:200px;display:block;}
+.change{margin:0 auto;max-width:500px;padding:60px 0;position:relative;}
+h1#a, h1#b, h1#c, h1#d, h1#e{animation-duration:15s;-webkit-animation-duration:15s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;padding:0;position:absolute;}h1#a{animation-name:a;-webkit-animation-name:a}h1#b{animation-name:b;-webkit-animation-name:b}h1#c{animation-name:c;-webkit-animation-name:c}h1#d{animation-name:d;-webkit-animation-name:d}
+h1#e{animation-name:e;-webkit-animation-name:e}
+@keyframes a{0%{opacity:0;}10%{opacity:1;}20%{opacity:1;}30%{opacity:0;}40%{opacity:0;}50%{opacity:0;}60%{opacity:0;}70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}
+@-webkit-keyframes a{0%{opacity:0;}10%{opacity:1;}20%{opacity:1;}30%{opacity:0;}40%{opacity:0;}50%{opacity:0;}60%{opacity:0;}
+70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}@keyframes b{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}30%{opacity:1;}40%{opacity:1;}50%{opacity:0;}60%{opacity:0;}70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}@-webkit-keyframes b{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}30%{opacity:1;}40%{opacity:1;}50%{opacity:0;}60%{opacity:0;}
+70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}@keyframes c{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}
+30%{opacity:0;}40%{opacity:0;}50%{opacity:1;}60%{opacity:1;}70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}@-webkit-keyframes c{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}30%{opacity:0;}40%{opacity:0;}50%{opacity:1;}60%{opacity:1;}70%{opacity:0;}80%{opacity:0;}90%{opacity:0;}100%{opacity:0;}}@keyframes d{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}30%{opacity:0;}40%{opacity:0;}50%{opacity:0;}60%{opacity:0;}70%{opacity:1;}80%{opacity:1;}
+90%{opacity:0;}100%{opacity:0;}}
+@-webkit-keyframes d{0%{opacity:0;}
+10%{opacity:0;}20%{opacity:0;}30%{opacity:0;}40%{opacity:0;}50%{opacity:0;}60%{opacity:0;}70%{opacity:1;}80%{opacity:1;}90%{opacity:0;}100%{opacity:0;}}
+@keyframes e{0%{opacity:0;}10%{opacity:0;}20%{opacity:0;}30%{opacity:0;}40%{opacity:0;}50%{opacity:0;}60%{opacity:0;}70%{opacity:0;}80%{opacity:0;}90%{opacity:1;}100%{opacity:1;}}@-webkit-keyframes e{0%{opacity:0;}
+10%{opacity:0;}20%{opacity:0;}30%{opacity:0;}40%{opacity:0;}
+50%{opacity:0;}
+60%{opacity:0;}
+70%{opacity:0;}
+80%{opacity:0;}
+90%{opacity:1;}
+100%{opacity:1;}}
+.page:after{clear:both;content:" ";display:block;height:0;visibility:hidden;}
+.box p, .box h1, .box h2, .bgw p{margin:0 auto;padding:0.9em 0;position:relative;max-width:500px;display: block;}
+
+.header-menu-class:hover {background:#fff;}
+.heins a:hover{-webkit-transition:color:#74DBF2 0.9s ease-in-out;-moz-transition:color:#74DBF2 0.9s ease-in-out;-o-transition:color:#74DBF2 0.9s ease-in-out;transition:color:#74DBF2 0.9s ease-in-out;}
+#present li a:hover span{display:block;position:absolute;top:10px;}
+#exper:hover{background-position:0px 60px}
+@media only screen and
+(max-width:1024px){}
+
+.imgbox:hover{transform:scale(2) rotate(5deg) translate(50px);}
+.imgbox:hover img{z-index:1000;}
+
+#related li a:hover span{display:block;}
+.view:hover img{transform:scale(10);opacity:0;}
+.view:hover .mask{opacity:1;}
+.view:hover h2, .view:hover p, .view:hover a.info{transform:scale(1);opacity:1;}
+
+.gallery-item:hover img{transform:scale(10);opacity:0;background:grey;}
+.gallery-item:hover .gallery-caption{font-size:1.2em;top:30px;}
+p{margin-top:0;font-size:1.02em;line-height:1.7em;}
+h1,h2{margin:0;font-weight:700;}
+h1{font-size:2.1em;padding-bottom:20px;}
+h2{font-size:1.3em;padding-bottom:15px;}
+h3{font-size:0.8em;padding-bottom:15px;}
+h4{font-size:.6em}
+
+@media screen and (max-width:800px){p{font-size:1.2em;}h2{font-size:1.3em}h1{font-size:1.5em}.bag{height:50%;}
+    .header-menu-class{background-color:rgba(253, 253, 253, .9);}.box{padding:0 10px;width: initial;}}
+@media screen and (min-width:900px){.bag{height:80%;min-height:500px;background-attachment:fixed !important;} }
