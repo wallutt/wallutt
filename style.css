@@ -1,6 +1,19 @@
+body {margin: 0; padding: 0;}
 
-
-#banana {
+#box {
     margin: 0 auto;
-    width: 30%;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.banana {animation: bana 5s infinite;}
+
+
+@keyframes bana {
+    0% {display: block}
+    10% {display: none}
+    90% {display: none}
+    100% {display: none}
+
 }
