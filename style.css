@@ -4,14 +4,14 @@ body {margin: 0; padding: 0;background: #f8f8f8;font-family: 'Quicksand', sans-s
 
 #alles {width: 960px; margin: 0 auto;}
 
-h2 {    margin: 50px 0 0 0;}
-p {margin: 0;    font-size: 1.2em;
-    line-height: 1.5em;}
+h2 {margin: 50px 0 0 0;}
+p {margin: 0; font-size: 1.2em; line-height: 1.5em;}
 
 footer {padding: 30px 0}
 
 @media (max-width: 959px) {
     #alles, #alles img {width:100%}
+    p, h1, h2, a {padding: 0 5px;}
 }
 
 /* http://ebene11.com/imageslider-ohne-javascript.html */
