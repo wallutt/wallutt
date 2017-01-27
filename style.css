@@ -1,19 +1,190 @@
-body {margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-#box {
-    margin: 0 auto;
-    width: 80%;
-    padding: 30px;
+body {margin: 0; padding: 0;background: #f8f8f8;font-family: 'Quicksand', sans-serif;}
 
+#alles {width: 960px; margin: 0 auto;}
+
+h2 {    margin: 50px 0 0 0;}
+p {margin: 0;    font-size: 1.2em;
+    line-height: 1.5em;}
+
+footer {padding: 30px 0}
+
+@media (max-width: 959px) {
+    #alles, #alles img {width:100%}
 }
 
-.banana {animation: bana 5s infinite;}
+/* http://ebene11.com/imageslider-ohne-javascript.html */
+.cssSlider ul {padding: 0; margin: 0;}
+figure {margin: 0; padding: 0;}
+.slider {
+    overflow-x: hidden;
+    /* width: 1000px; bei Bedarf anpassen, da hier 100% gewünscht sind, kann man die Angabe einsparen */
+}
+
+.sliderElements {
+    width: 300%; /* Summe der Einzelbreiten der Slides */
+}
+.sliderElements2 {
+    width: 200%; /* Summe der Einzelbreiten der Slides */
+}
+
+.sliderElements > li {
+    float: left;
+    width: 33%; /* 100 durch Anzahl der Slides */
+}
+
+.sliderElements2 > li {
+    float: left;
+    width: 50%; /* 100 durch Anzahl der Slides */
+}
+/* Clearfix für die Liste */
+.sliderElements:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.sliderElements, .sliderElements2 {
+    position: relative;
+    left: 0;
+}
+
+.slider input:nth-of-type(2):checked ~ .sliderElements {
+    left: -100%;
+}
+
+.slider input:nth-of-type(3):checked ~ .sliderElements {
+    left: -200%;
+}
+
+/* Statt der Pseudoklasse nth-of-type können wir auch mit der ID des inputs arbeiten */
+#slide04:checked ~ .sliderElements {
+    left: -300%;
+}
+
+.sliderElements, .sliderElements2,
+.sliderElements figure,
+.sliderControls {
+    margin: 0;
+}
+
+.sliderElements:after, .sliderElements2:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.cssSlider {
+    overflow-x: hidden;
+}
+
+.sliderElements, .sliderElements2 {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: 400%;
+    margin-bottom: .8em;
+    -webkit-transition: left .8s ease-in-out;
+    -moz-transition: left .8s ease-in-out;
+    -o-transition: left .8s ease-in-out;
+    transition: left .8s ease-in-out;
+}
+
+.sliderElements2 {width: 200%; }
+
+.sliderElements > li  {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+ .sliderElements2 > li  {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#slide02:checked ~ .sliderElements, #slide202:checked ~ .sliderElements2 {
+    left: -100%;
+}
+
+#slide03:checked ~ .sliderElements, #slide203:checked ~ .sliderElements2 {
+    left: -200%;
+}
+
+#slide04:checked ~ .sliderElements, #slide204:checked ~ .sliderElements2 {
+    left: -300%;
+}
+
+/* Bildunterschrift auf dem Bild positionieren */
+.sliderElements figcaption, .sliderElements2 figcaption {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    padding: .4em;
+    background: rgba(0,0,0,.5);
+}
+
+/* Bilder responsive */
+.sliderElements img, .sliderElements2 img {
+    width: 100%;
+    height: auto;
+}
 
 
-@keyframes bana {
-    0% {display: block}
-    10% {display: none}
-    90% {display: none}
-    100% {display: none}
+/* inputs aus dem Blickfeld schieben */
+.cssSlider input {
+    position: absolute;
+    left: -99999px;
+}
 
+/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+.sliderControls {
+    text-align: center;
+}
+
+/* Controls nebeneinander bringen */
+.sliderControls li {
+    display: inline-block;
+}
+
+/* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+.sliderControls label {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    background: #68B022;
+    color: #68B022;
+}
+
+/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+.sliderControls label:hover,
+#slide01:checked ~ .sliderControls label[for="slide01"],
+#slide02:checked ~ .sliderControls label[for="slide02"],
+#slide03:checked ~ .sliderControls label[for="slide03"],
+#slide04:checked ~ .sliderControls label[for="slide04"] {
+    background: #ddd;
+    color: #ddd;
+}
+.sliderControls2 label:hover,
+#slide201:checked ~ .sliderControls label[for="slide201"],
+#slide202:checked ~ .sliderControls label[for="slide202"],
+#slide203:checked ~ .sliderControls label[for="slide203"],
+#slide204:checked ~ .sliderControls label[for="slide204"] {
+    background: #ddd;
+    color: #ddd;
 }
